@@ -15,6 +15,7 @@ const Styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 1,
     elevation: 3,
+    marginBottom: 10,
   },
   leftView: {
     width: '40%',
