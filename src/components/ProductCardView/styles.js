@@ -19,7 +19,7 @@ const Styles = StyleSheet.create({
   },
   leftView: {
     width: '40%',
-    height: 150,
+    height: 160,
     justifyContent: 'center',
     alignItems: 'center',
   },

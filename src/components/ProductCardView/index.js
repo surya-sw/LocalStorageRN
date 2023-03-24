@@ -5,13 +5,15 @@ import Styles from './styles';
 import Strings from '../../constants/Strings';
 
 const ProductCardView = props => {
-  const {productImg, productName, productPrice, productDsc} = props;
+  const {productImg, productName, productPrice, productDsc, productDate} =
+    props;
+
   return (
     <View style={Styles.container}>
       <View style={Styles.leftView}>
         {productImg ? (
           <Image
-            source={productImg}
+            source={{uri: `data:image/jpeg;base64,${productImg}`}}
             style={Styles.productImg}
             borderTopLeftRadius={10}
             borderBottomLeftRadius={10}
@@ -34,9 +36,10 @@ const ProductCardView = props => {
         <Text
           style={Styles.productDsc}
           ellipsizeMode={'tail'}
-          numberOfLines={3}>
+          numberOfLines={2}>
           {productDsc ? productDsc : Strings.noDescription}
         </Text>
+        <Text style={Styles.productDsc}>{productDate}</Text>
       </View>
     </View>
   );
