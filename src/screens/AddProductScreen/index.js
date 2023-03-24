@@ -15,7 +15,7 @@ import Strings from '../../constants/Strings';
 const AddProductScreen = () => {
   const navigation = useNavigation();
 
-  const [productImg, setProductImg] = useState('xxx');
+  const [productImg, setProductImg] = useState('');
   const [productName, setProductName] = useState('');
   const [productPrice, setProductPrice] = useState('');
   const [productDsc, setProductDsc] = useState('');
