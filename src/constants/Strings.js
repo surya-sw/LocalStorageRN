@@ -5,6 +5,7 @@ const Strings = {
   noDescription: 'no description',
   selectDate: 'Select Date',
   noProductFound: 'Sorry No Product Found',
+  cantAddProduct: 'Sorry! Product Not Added',
 };
 
 export default Strings;
