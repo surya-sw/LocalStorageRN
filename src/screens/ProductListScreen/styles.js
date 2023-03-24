@@ -10,6 +10,22 @@ const Styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingTop: 20,
   },
+  emptyContainer: {
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: 250,
+  },
+  emptyListIcon: {
+    width: 130,
+    height: 130,
+    resizeMode: 'contain',
+  },
+  noProductFoundTxt: {
+    fontSize: 20,
+    marginTop: 10,
+    fontWeight: 'bold',
+  },
 });
 
 export default Styles;
